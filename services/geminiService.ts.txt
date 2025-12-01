@@ -1,4 +1,4 @@
-import { GoogleGenAI, Type } from "@google/genai";111
+import { GoogleGenAI, Type } from "@google/genai";
 import { TranscriptSegment, VocabWord } from '../types';
 
 // Use standard Vite env variable
@@ -189,4 +189,5 @@ export const chatWithAi = async (history: { role: string; parts: { text: string 
     const result = await chat.sendMessage({ message: newMessage });
     return result.text;
 }
+
 
